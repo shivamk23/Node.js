@@ -14,6 +14,10 @@ const server=http.createServer((req,res)=>{
     }else if(url==="/about" && method==="GET"){
         let data=readAndServe("./about.html");
         res.end(data);
+
+    }else if(url==="/contact" && method==="GET"){
+        let data=readAndServe("./contact.html");
+        res.end(data);
     }else{
         res.end("Not found...");
     }
