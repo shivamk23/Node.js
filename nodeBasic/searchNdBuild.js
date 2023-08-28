@@ -73,7 +73,7 @@ function search(path){
 fs.readdir(path,function(err,files){
     if(!err){
         files.forEach((item)=>{
-            if(item.endsWith(".js")){
+            if(item.endsWith(".html")){
                 fs.appendFile("./paths.txt",path+'/'+item+"\n",function(err){
                     if(err){
                         console.log("Somthing issue")
